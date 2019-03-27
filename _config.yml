@@ -1,6 +1,6 @@
-title: "Blog Title"
-author: "Blog Author"
-description: "Really cool blog about ... something"
+title: "[::]"
+author: "Jinone"
+description: "one sample blog"
 
 # Jekyll settings
 permalink: /:title/          # see https://jekyllrb.com/docs/permalinks/
@@ -15,7 +15,7 @@ date_format: "%B %d, %Y"     # see http://shopify.github.io/liquid/filters/date/
 
 # Theme settings
 dark_theme: false            # enables dark mode
-dark_header: false           # uses dark header whether dark_theme is enabled or not
+dark_header: true          # uses dark header whether dark_theme is enabled or not
 
 #navigation:                 # (optional) site navigation in the header
 #  - index.html
@@ -23,9 +23,9 @@ dark_header: false           # uses dark header whether dark_theme is enabled or
 #  - README.md
 
 icons:                       # (optional) icons in the header, see http://fontawesome.com/icons
-  envelope: "mailto:niklasbuschmann@users.noreply.github.com"
+  twitter: "https://twitter.com/jinonehk"
   github: "https://github.com/niklasbuschmann/contrast"
-  rss: "/contrast-demo/feed.xml"
+  rss: "/contrast/feed.xml"
 
 comments:                    # embed disqus or isso comments
 #  disqus: "disqus-contrast"
