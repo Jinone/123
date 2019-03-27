@@ -14,17 +14,17 @@ post_footer: true            # show previous and next links at the end of each p
 date_format: "%B %d, %Y"     # see http://shopify.github.io/liquid/filters/date/
 
 # Theme settings
-dark_theme: true            # enables dark mode
+dark_theme: false            # enables dark mode
 dark_header: true          # uses dark header whether dark_theme is enabled or not
 
 #navigation:                 # (optional) site navigation in the header
-#  - index.html
-#  - archive.md
-#  - README.md
+  - index.html
+  - archive.md
+  - README.md
 
 icons:                       # (optional) icons in the header, see http://fontawesome.com/icons
   twitter: "https://twitter.com/jinonehk"
-  h1: "https://hackerone.com"
+  hackerrank: "https://hackerone.com"
   rss: "/feed.xml"
 
 comments:                    # embed disqus or isso comments
