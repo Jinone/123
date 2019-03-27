@@ -14,7 +14,7 @@ post_footer: true            # show previous and next links at the end of each p
 date_format: "%B %d, %Y"     # see http://shopify.github.io/liquid/filters/date/
 
 # Theme settings
-dark_theme: false            # enables dark mode
+dark_theme: true            # enables dark mode
 dark_header: true          # uses dark header whether dark_theme is enabled or not
 
 #navigation:                 # (optional) site navigation in the header
@@ -24,8 +24,8 @@ dark_header: true          # uses dark header whether dark_theme is enabled or n
 
 icons:                       # (optional) icons in the header, see http://fontawesome.com/icons
   twitter: "https://twitter.com/jinonehk"
-  github: "https://github.com/niklasbuschmann/contrast"
-  rss: "/contrast/feed.xml"
+  h1: "https://hackerone.com"
+  rss: "/feed.xml"
 
 comments:                    # embed disqus or isso comments
 #  disqus: "disqus-contrast"
