@@ -18,9 +18,9 @@ dark_theme: false            # enables dark mode
 dark_header: true          # uses dark header whether dark_theme is enabled or not
 
 #navigation:                 # (optional) site navigation in the header
-  - index.html
-  - archive.md
-  - README.md
+#  - index.html
+#  - archive.md
+#  - README.md
 
 icons:                       # (optional) icons in the header, see http://fontawesome.com/icons
   twitter: "https://twitter.com/jinonehk"
