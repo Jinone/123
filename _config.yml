@@ -1,4 +1,4 @@
-title: "[::]"
+title: "Jinone"
 author: "Jinone"
 description: "one sample blog"
 
@@ -24,7 +24,7 @@ dark_header: true          # uses dark header whether dark_theme is enabled or n
 
 icons:                       # (optional) icons in the header, see http://fontawesome.com/icons
   twitter: "https://twitter.com/jinonehk"
-  hackerrank: "https://hackerone.com"
+  hackerrank: "https://hackerone.com/"
   rss: "/feed.xml"
 
 comments:                    # embed disqus or isso comments
