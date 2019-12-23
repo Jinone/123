@@ -1,4 +1,3 @@
-# [bugbounty]A Simple SSRF
 I was working on a private program which i cannot disclose
 
 First of all, its web assets have several subdomains. After I tested it for a while, I plan to look at the mac client.
@@ -6,6 +5,7 @@ First of all, its web assets have several subdomains. After I tested it for a wh
 The mac client has an chat interface where i found a SSRF.
 
 The following is the whole process
+
 After installation, sign up for login, then I see a chat interface.
 
 Send a URL
