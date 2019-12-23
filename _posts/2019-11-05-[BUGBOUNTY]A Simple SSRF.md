@@ -1,8 +1,11 @@
 # [bugbounty]A Simple SSRF
-This is a private program
+I was working on a private program which i cannot disclose
 
-First of all, its web assets have several subdomains. After I tested it for a while, I plan to check out the mac client.
+First of all, its web assets have several subdomains. After I tested it for a while, I plan to look at the mac client.
 
+The mac client has an chat interface where i found a SSRF.
+
+The following is the whole process
 After installation, sign up for login, then I see a chat interface.
 
 Send a URL
@@ -115,6 +118,11 @@ Url decoding
 Bypass Same Origin Policy with DNS-rebinding to retrieve  Internal server .
 
 ![enter image description here](https://user-images.githubusercontent.com/5891788/53449161-87e47300-3a19-11e9-8e3c-7b7bdfeaab6b.png)
+
 Details from https://github.com/mpgn/ByP-SOP
 
-Finally ![enter image description here](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/t11.png)
+Finally 
+![enter image description here](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/t11.png)
+I got the highest bounty reward for this private project.
+![enter image description here](https://1.bp.blogspot.com/-3GE4BNyvnIk/XcJCEXqEEXI/AAAAAAAAACQ/6vs1Kn_Ef-Iph3bSnDgT7fG4T3vW1BKhACLcBGAsYHQ/s1600/1.png)
+
