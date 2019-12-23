@@ -10,12 +10,12 @@ After installation, sign up for login, then I see a chat interface.
 
 Send a URL
 
-![enter image description here](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/1.png)
+![enter image description here](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/image1/1.png)
 It seems to preview the url, return a title and favicons
 
 I use my server ip to test. Then received
 
-![enter image description here](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/t3.png)
+![enter image description here](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/image1/t3.png)
 Found that is the browser's ua header
 
 Then I tested it http://127.0.0.1 https://127.0.0.1 file://etc/passwd ....
@@ -24,22 +24,22 @@ Tested a lot of common internal ip
 
 But
 
-![enter image description here](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/t1.png)
-![enter image description here](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/t2.png)
+![enter image description here](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/image1/t1.png)
+![enter image description here](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/image1/t2.png)
 No effect
 
 Then I tried the subdomain brute force, as well as some asset discovery sites to find internal ip
 
 Until there is an ip
 
-![enter image description here](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/t4.png)
+![enter image description here](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/image1/t4.png)
 Seems to be successful
 
 Then I quickly submitted the vulnerability
 
 But
 
-![enter image description here](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/t5.png)
+![enter image description here](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/image1/t5.png)
 As written above, we can only get a very small amount of content.
 
 After testing, I found that it will also execute js because it is browser ua
@@ -64,7 +64,7 @@ After testing, I found that it will also execute js because it is browser ua
     </script></html>
     
     
-![enter image description here](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/t6.png)
+![enter image description here](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/image1/t6.png)
 
 Can successfully get Google returns the content length
 
@@ -109,10 +109,10 @@ poc.html
     
 Then check save.txt
 
-![enter image description here](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/t8.png)
+![enter image description here](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/image1/t8.png)
 Url decoding
 
-![enter image description here](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/t9.png)
+![enter image description here](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/image1/t9.png)
 **If Same Origin Policy blocks**
 
 Bypass Same Origin Policy with DNS-rebinding to retrieve  Internal server .
@@ -122,7 +122,7 @@ Bypass Same Origin Policy with DNS-rebinding to retrieve  Internal server .
 Details from https://github.com/mpgn/ByP-SOP
 
 Finally 
-![enter image description here](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/t11.png)
+![enter image description here](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/image1/t11.png)
 I got the highest bounty reward for this private project.
 ![enter image description here](https://1.bp.blogspot.com/-3GE4BNyvnIk/XcJCEXqEEXI/AAAAAAAAACQ/6vs1Kn_Ef-Iph3bSnDgT7fG4T3vW1BKhACLcBGAsYHQ/s1600/1.png)
 
