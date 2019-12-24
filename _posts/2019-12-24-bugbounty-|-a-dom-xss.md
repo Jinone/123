@@ -6,12 +6,11 @@ I checked the js file by the way when I checked the request. Found a suspicious 
 
 **/xxxxxxxxx/**    path
 
-[https://www.xxxxx.com/xxxxxxxxx/pdp.min.js]
+https://www.xxxxx.com/xxxxxxxxx/pdp.min.js
 
 Vuln code
 
 ![Image failed to load
-
 e](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/image1/t33.png)
 
 ajax Get request response write to page
