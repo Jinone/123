@@ -56,7 +56,9 @@ This will visit the attacker's website to get their website content
 https://www.xxxxx.com//attacker.com/xxxxxxxxx
 
 location.pathname is //attacker.com/xxxxxxxxx
-
+```
+//attacker.com = https://attacker.com
+```
 ajax will request https://attacker.com/xxxxxxxxx for the response content
 
 Attackers just need to set up their own website content
