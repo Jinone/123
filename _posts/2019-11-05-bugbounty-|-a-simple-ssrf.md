@@ -10,12 +10,12 @@ After installation, sign up for login, then I see a chat interface.
 
 Send a URL
 
-![enter image description here](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/image1/1.png)
+![Image failed to load](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/image1/1.png)
 It seems to preview the url, return a title and favicons
 
 I use my server ip to test. Then received
 
-![enter image description here](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/image1/t3.png)
+![Image failed to load](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/image1/t3.png)
 Found that is the browser's ua header
 
 Then I tested it http://127.0.0.1 https://127.0.0.1 file://etc/passwd ....
@@ -24,22 +24,22 @@ Tested a lot of common internal ip
 
 But
 
-![enter image description here](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/image1/t1.png)
-![enter image description here](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/image1/t2.png)
+![Image failed to load](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/image1/t1.png)
+![Image failed to load](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/image1/t2.png)
 No effect
 
 Then I tried the subdomain brute force, as well as some asset discovery sites to find internal ip
 
 Until there is an ip
 
-![enter image description here](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/image1/t4.png)
+![Image failed to load](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/image1/t4.png)
 Seems to be successful
 
 Then I quickly submitted the vulnerability
 
 But
 
-![enter image description here](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/image1/t5.png)
+![Image failed to load](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/image1/t5.png)
 As written above, we can only get a very small amount of content.
 
 After testing, I found that it will also execute js because it is browser ua
@@ -64,7 +64,7 @@ After testing, I found that it will also execute js because it is browser ua
     </script></html>
     
     
-![enter image description here](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/image1/t6.png)
+![Image failed to load](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/image1/t6.png)
 
 Can successfully get Google returns the content length
 
@@ -107,28 +107,27 @@ poc.html
     document.getElementById("d1").innerHTML=role.length;
     </script></html>
     
-Then check save.txt
+Then check save.txt (You can also use the Burp Collaborator client)
 
-![enter image description here](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/image1/t8.png)
+![Image failed to load](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/image1/t8.png)
 Url decoding
 
-![enter image description here](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/image1/t9.png)
+![Image failed to load](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/image1/t9.png)
 
 We are successful in getting the full content of any address on the internal network.
-
 
 **If Same Origin Policy blocks**
 
 Bypass Same Origin Policy with DNS-rebinding to retrieve  Internal server .
 
-![enter image description here](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/image1/t23.png)
+![Image failed to load](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/image1/t23.png)
 
 Details from https://github.com/mpgn/ByP-SOP
 
 Finally 
-![enter image description here](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/image1/t11.png)
+![Image failed to load](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/image1/t11.png)
 
 I got the highest bounty reward for this private project.
 
-![enter image description here](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/image1/t22.png)
+![Image failed to load](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/image1/t22.png)
 
