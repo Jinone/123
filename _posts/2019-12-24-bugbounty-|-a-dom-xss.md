@@ -29,6 +29,7 @@ ajax will make such a request
 https://www.xxxxx.com/xxxxxxxxx/showProductRedemption?productCode=263625
 
 
+      var prefix = location.pathname;
       var url = prefix + "/showProductRedemption?productCode=" + vpCode;
                 $.ajax({
                     url: url,
