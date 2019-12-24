@@ -72,7 +72,7 @@ Does not seem to be blocked by Same Origin Policy
 
 Then we can get any internal network content
 
-**poc**
+**POC**
 
 xxx.php
 
@@ -113,16 +113,22 @@ Then check save.txt
 Url decoding
 
 ![enter image description here](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/image1/t9.png)
+
+We are successful in getting the full content of any address on the internal network.
+
+
 **If Same Origin Policy blocks**
 
 Bypass Same Origin Policy with DNS-rebinding to retrieve  Internal server .
 
-![enter image description here](https://user-images.githubusercontent.com/5891788/53449161-87e47300-3a19-11e9-8e3c-7b7bdfeaab6b.png)
+![enter image description here](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/image1/t23.png)
 
 Details from https://github.com/mpgn/ByP-SOP
 
 Finally 
 ![enter image description here](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/image1/t11.png)
+
 I got the highest bounty reward for this private project.
-![enter image description here](https://1.bp.blogspot.com/-3GE4BNyvnIk/XcJCEXqEEXI/AAAAAAAAACQ/6vs1Kn_Ef-Iph3bSnDgT7fG4T3vW1BKhACLcBGAsYHQ/s1600/1.png)
+
+![enter image description here](https://raw.githubusercontent.com/Jinone/jinone.github.io/master/_posts/image1/t22.png)
 
