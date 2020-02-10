@@ -4,6 +4,7 @@ description: "one sample blog"
 
 permalink: /:title/
 lang: "en"
+paginate: 10 
 date_format: "%B %d, %Y"
 
 # Layout
@@ -25,10 +26,10 @@ navigation:
   - {file: "index.html", icon: home}
   - {file: "README.md", icon: address-card}
 
-external:                    # see http://fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
-  - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
+icons:                       # (optional) icons in the header, see http://fontawesome.com/icons
+  twitter: "https://twitter.com/jinonehk"
+  hackerrank: "https://hackerone.com/jin0ne"
+  rss: "/feed.xml"
 
 comments:
 #  disqus: ""                # see https://disqus.com/
