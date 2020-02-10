@@ -26,11 +26,10 @@ navigation:
   - {file: "index.html", icon: home}
   - {file: "README.md", icon: address-card}
 
-icons:                       # (optional) icons in the header, see http://fontawesome.com/icons
-  twitter: "https://twitter.com/jinonehk"
-  hackerrank: "https://hackerone.com/jin0ne"
-  rss: "/feed.xml"
-
+external:                    # see http://fontawesome.com/icons
+  - {title: Twitter, icon: envelope, url: "https://twitter.com/jinonehk"}
+  - {title: Hackerone, icon: github, url: "https://hackerone.com/jin0ne"}
+  - {title: Subscribe, icon: rss, url: "/feed.xml"}
 comments:
 #  disqus: ""                # see https://disqus.com/
 #  isso: ""                  # see https://posativ.org/isso/
