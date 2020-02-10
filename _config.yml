@@ -34,6 +34,12 @@ icons:                       # (optional) icons in the header, see http://fontaw
 comments:
 #  disqus: ""                # see https://disqus.com/
 #  isso: ""                  # see https://posativ.org/isso/
+remote_theme: niklasbuschmann/contrast@v2.4
 
-plugins:
+plugins: 
+ - jekyll-remote-theme
  - jekyll-feed
+ - jekyll-paginate
+ - jekyll-default-layout
+
+theme: jekyll-theme-architect
